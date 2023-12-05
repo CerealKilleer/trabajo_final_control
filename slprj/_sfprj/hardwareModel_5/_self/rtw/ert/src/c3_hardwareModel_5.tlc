@@ -1,0 +1,118 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "upright"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "upright"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "IMUCalibrated"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "IMUCalibrated"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "batteryOK"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "batteryOK"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_hardwareModel_5"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c3_hardwareModel_5"\
+      Path         "is_active_c3_hardwareModel_5"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_checkFallen"\
+      Description  "StateIsActive"\
+      SFName       "is_active_checkFallen"\
+      Path         "checkFallen.is_active_checkFallen"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_checkFallen"\
+      Description  "StateActiveChild"\
+      SFName       "is_checkFallen"\
+      Path         "checkFallen.is_checkFallen"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_checkIMUCalib"\
+      Description  "StateIsActive"\
+      SFName       "is_active_checkIMUCalib"\
+      Path         "checkIMUCalib.is_active_checkIMUCalib"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_checkIMUCalib"\
+      Description  "StateActiveChild"\
+      SFName       "is_checkIMUCalib"\
+      Path         "checkIMUCalib.is_checkIMUCalib"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_checkBattery"\
+      Description  "StateIsActive"\
+      SFName       "is_active_checkBattery"\
+      Path         "checkBattery.is_active_checkBattery"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_checkBattery"\
+      Description  "StateActiveChild"\
+      SFName       "is_checkBattery"\
+      Path         "checkBattery.is_checkBattery"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_calculateEnable"\
+      Description  "StateIsActive"\
+      SFName       "is_active_calculateEnable"\
+      Path         "calculateEnable.is_active_calculateEnable"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_calculateEnable"\
+      Description  "StateActiveChild"\
+      SFName       "is_calculateEnable"\
+      Path         "calculateEnable.is_calculateEnable"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
